@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+.game-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game-box {
+    margin-bottom: 20px;
+}
+
+.game-box p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.result-box {
+    font-size: 1.2em;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.select-box {
+    margin-top: 20px;
+}
+
+#select-character-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#select-character-btn:hover {
+    background: #0b7dda;
+}
+
+.character-list {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+
+#search-input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.character-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.character-box:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.character-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.character-box p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+#character-list.active {
+    display: block;
+}
