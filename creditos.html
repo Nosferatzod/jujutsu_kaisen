@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/2.ico" type="image/png">
+    <title>Créditos - Jujutsu Kaisen Game</title>
+    <link rel="stylesheet" href="./css/credits.css">
+</head>
+
+<body>
+
+    <div class="video-background">
+        <video id="background-video" autoplay muted loop>
+            <source src="./video/jujutsu.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+
+    <div class="rain"></div>
+
+    <div class="credits-container">
+        <h1>Créditos</h1>
+        <p>Desenvolvido por Kauã Francino</p>
+        <p>Gostaria de expressar minha profunda gratidão a Gege Akutami pelo trabalho incrível e pela dedicação ao criar Jujutsu Kaisen. Sua criatividade e empenho têm sido uma enorme fonte de inspiração. A história e os personagens que você trouxe à vida
+            continuam a impactar e a emocionar muitas pessoas ao redor do mundo. Muito obrigado por todo o esforço e paixão colocados nessa obra-prima.</p>
+        <p>Agradecimentos a todos os fãs da série!</p>
+
+        <img src="./image/gege_akutami.jpg" alt="Gojo com Guarda-Chuva">
+    </div>
+
+    <div class="audio-control">
+        <div class="volume-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M16 12a4 4 0 0 1-4 4v-8a4 4 0 0 1 4 4zm-8 0a8 8 0 0 1 8 8v-2a6 6 0 0 0-6-6v-2a8 8 0 0 1-8 8v2a10 10 0 0 0 10-10h2a12 12 0 0 1-12 12v-2z"/>
+            </svg>
+        </div>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <a href="game.html" class="back-button">Voltar para o Game</a>
+    <audio id="background-music" loop>
+        <source src="./audio/jujutsu.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const volumeSlider = document.getElementById('volume-slider');
+        const backgroundMusic = document.getElementById('background-music');
+
+        volumeSlider.addEventListener('input', function() {
+            backgroundMusic.volume = volumeSlider.value;
+        });
+
+        backgroundMusic.play();
+    </script>
+
+</body>
+
+</html>

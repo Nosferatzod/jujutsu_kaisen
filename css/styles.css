@@ -1,249 +1,295 @@
 /* Estilos básicos */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Arial', sans-serif;
-  color: #fff;
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
 }
 
+.credits-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.credits-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+
 /* Vídeo de fundo */
+
 .video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 
 #background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+
 /* Container do login */
+
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  padding: 20px;
-  flex-direction: column; /* Ajusta a direção para coluna em telas menores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    /* Ajusta a direção para coluna em telas menores */
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 350px;
-  width: 100%; /* Responsivo - ocupa 100% da largura da tela */
-  max-width: 400px; /* Limita a largura máxima */
-  flex-direction: column;
-  gap: 20px; /* Reduz o espaçamento */
-  background: #e3e3e3;
-  box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
-  border-radius: 8px;
-  padding: 20px; /* Adiciona preenchimento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 100%;
+    /* Responsivo - ocupa 100% da largura da tela */
+    max-width: 400px;
+    /* Limita a largura máxima */
+    flex-direction: column;
+    gap: 20px;
+    /* Reduz o espaçamento */
+    background: #ffeaea73;
+    box-shadow: 16px 16px 32px #ff878780, -16px -16px 32px #ff838377;
+    border-radius: 8px;
+    padding: 20px;
+    /* Adiciona preenchimento */
 }
 
+
 /* Estilos do login */
+
 .login {
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  font-weight: bold;
-  font-size: 1.2em; /* Tamanho de fonte ajustado */
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* Tamanho de fonte ajustado */
 }
 
 .inputBox {
-  position: relative;
-  width: 100%;
-  max-width: 300px; /* Limita o tamanho máximo dos inputs */
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    /* Limita o tamanho máximo dos inputs */
 }
 
 .inputBox input {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: none;
-  color: #000;
-  font-size: 1em;
-  background: transparent;
-  border-left: 2px solid #000;
-  border-bottom: 2px solid #000;
-  transition: 0.1s;
-  border-bottom-left-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
 }
 
 .inputBox span {
-  margin-top: 5px;
-  position: absolute;
-  left: 0;
-  transform: translateY(-4px);
-  margin-left: 10px;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 12px;
-  color: #000;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 3px;
-  border-radius: 8px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
 }
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-  transform: translateX(113px) translateY(-15px);
-  font-size: 0.8em;
-  padding: 5px 10px;
-  background: #000;
-  letter-spacing: 0.2em;
-  color: #fff;
-  border: 2px;
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
 }
 
 .inputBox input:valid,
 .inputBox input:focus {
-  border: 2px solid #000;
-  border-radius: 8px;
+    border: 2px solid #000;
+    border-radius: 8px;
 }
 
 .enter {
-  height: 45px;
-  width: 100%;
-  max-width: 200px; /* Ajusta o tamanho máximo */
-  border-radius: 5px;
-  border: 2px solid #000;
-  cursor: pointer;
-  background-color: transparent;
-  transition: 0.5s;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 2px;
-  margin-bottom: 1em;
+    height: 45px;
+    width: 100%;
+    max-width: 200px;
+    /* Ajusta o tamanho máximo */
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
 }
 
 .enter:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
+
 
 /* Controle de áudio */
+
 .audio-control {
-  color: #000;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    color: #000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 /* Estilos para a barra de volume */
+
 .slider {
-  --slider-width: 100%;
-  --slider-height: 6px;
-  --slider-bg: rgb(82, 82, 82);
-  --slider-border-radius: 999px;
-  --level-color: #fff;
-  --level-transition-duration: .1s;
-  --icon-margin: 15px;
-  --icon-color: var(--slider-bg);
-  --icon-size: 25px;
+    --slider-width: 100%;
+    --slider-height: 6px;
+    --slider-bg: rgb(82, 82, 82);
+    --slider-border-radius: 999px;
+    --level-color: #fff;
+    --level-transition-duration: .1s;
+    --icon-margin: 15px;
+    --icon-color: var(--slider-bg);
+    --icon-size: 25px;
 }
 
 .slider {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .slider .volume {
-  display: inline-block;
-  margin-right: var(--icon-margin);
-  color: var(--icon-color);
-  width: var(--icon-size);
-  height: auto;
+    display: inline-block;
+    margin-right: var(--icon-margin);
+    color: var(--icon-color);
+    width: var(--icon-size);
+    height: auto;
 }
 
 .slider .level {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: var(--slider-width);
-  height: var(--slider-height);
-  background: var(--slider-bg);
-  overflow: hidden;
-  border-radius: var(--slider-border-radius);
-  transition: height var(--level-transition-duration);
-  cursor: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    background: var(--slider-bg);
+    overflow: hidden;
+    border-radius: var(--slider-border-radius);
+    transition: height var(--level-transition-duration);
+    cursor: inherit;
 }
 
 .slider .level::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
-  box-shadow: -200px 0 0 200px var(--level-color);
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    box-shadow: -200px 0 0 200px var(--level-color);
 }
 
 .slider:hover .level {
-  height: calc(var(--slider-height) * 2);
+    height: calc(var(--slider-height) * 2);
 }
+
 
 /* Animação para o box de login */
+
 @keyframes slideIn {
-  from {
-      transform: translateY(-50%);
-  }
-  to {
-      transform: translateY(0);
-  }
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
+
 /* Media Queries para telas menores */
+
 @media (max-width: 768px) {
-  .card {
-      width: 90%; /* Ajusta a largura do card para 90% em telas pequenas */
-      max-width: none; /* Remove o limite de largura */
-  }
-
-  .login {
-      font-size: 1em; /* Ajusta o tamanho da fonte */
-  }
-
-  .inputBox input {
-      font-size: 0.9em; /* Ajusta o tamanho da fonte do input */
-  }
-
-  .enter {
-      width: 100%; /* Ajusta o botão para ocupar toda a largura disponível */
-  }
-
-  .audio-control {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      font-size: 0.9em;
-  }
+    .card {
+        width: 90%;
+        /* Ajusta a largura do card para 90% em telas pequenas */
+        max-width: none;
+        /* Remove o limite de largura */
+    }
+    .login {
+        font-size: 1em;
+        /* Ajusta o tamanho da fonte */
+    }
+    .inputBox input {
+        font-size: 0.9em;
+        /* Ajusta o tamanho da fonte do input */
+    }
+    .enter {
+        width: 100%;
+        /* Ajusta o botão para ocupar toda a largura disponível */
+    }
+    .audio-control {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 480px) {
-  .login {
-      font-size: 0.9em; /* Tamanho de fonte ajustado para telas muito pequenas */
-  }
-
-  .card {
-      gap: 15px; /* Reduz o espaçamento entre os elementos do card */
-  }
-
-  .inputBox {
-      width: 100%;
-  }
+    .login {
+        font-size: 0.9em;
+        /* Tamanho de fonte ajustado para telas muito pequenas */
+    }
+    .card {
+        gap: 15px;
+        /* Reduz o espaçamento entre os elementos do card */
+    }
+    .inputBox {
+        width: 100%;
+    }
 }
